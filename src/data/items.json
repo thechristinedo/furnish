@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Antique Wooden Stool",
+      "price": "34.99",
+      "url": "image1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Modern Accent Armchair",
+      "price": "179.99",
+      "url": "image2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sturdy Arch Frame Garment Rack",
+      "price": "34.99",
+      "url": "image3.jpg"
+    }
+  ]
+}
