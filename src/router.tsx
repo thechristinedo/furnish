@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import ErrorPage from "./pages/ErrorPage";
 import Contact from "./pages/Contact";
 import ProductDisplay from "./component/ProductDisplay";
+import CartPage from "./pages/CartPage";
 
 export const router = createBrowserRouter([
   {
@@ -28,5 +29,9 @@ export const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/cart",
+    element: <CartPage />,
   },
 ]);

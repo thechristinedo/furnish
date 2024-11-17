@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
-  height: 80px;
+  min-height: 80px;
   width: 100%;
 }
 
@@ -70,12 +70,12 @@ body {
 /**********************************************************************/
 
 .footerContainer {
-  background-color: rgb(var(--background-color));
+  background: rgb(var(--background-color));
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
-  padding: 10rem 4rem;
+  padding: 5rem 4rem;
 }
 
 .footerLeftContainer {
@@ -218,8 +218,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  transition: scale 1s;
 }
 
 .homeCardImgContainer {
@@ -227,19 +225,40 @@ body {
   cursor: pointer;
 }
 
+.homeCardImg {
+  width: 100%;
+  height: auto;
+
+  transition: transform 0.3s;
+}
+
 .homeCardImgContainer:hover .homeCardImg {
   transform: scale(1.2);
 }
 
-.homeCardImg {
-  width: 100%;
-  height: auto;
-  transition: 0.3s;
+.homeCardTitle {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .homeCardName {
   cursor: pointer;
   font-family: "Forum";
+}
+
+.homeCardTitle svg {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transition: 0.3s transform;
+}
+
+.homeCardName:hover + svg {
+  transform: rotate(-90deg);
 }
 
 /*************************************/
@@ -310,8 +329,15 @@ body {
 
 /******************************************************************/
 
-.productDisplayContainer {
+.productPageContainer {
   height: calc(100vh - 80px);
+  background: red;
+}
+
+/******************************************************************/
+
+.productDisplayContainer {
+  min-height: calc(100vh - 80px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -351,3 +377,76 @@ body {
 }
 
 /******************************************************************/
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  /* border: 1px solid black; */
+}
+
+.cartTitle {
+  font-size: 2.5rem;
+}
+
+/******************************************************************/
+
+.shoppingCartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cartCardContainer {
+  display: flex;
+  gap: 2rem;
+  height: 15rem;
+}
+
+.cartCardImg img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.cartCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartCardName {
+  font-family: "Forum";
+}
+
+.cartCardPrice {
+  font-family: "Works San";
+  font-weight: 300;
+}
+
+.cartCardAmount {
+  display: flex;
+}
+
+.cartCardQuantity {
+  background: rgb(var(--accent-color));
+  padding: 0.5rem 0.75rem;
+}
+
+.cartCardAmount button {
+  cursor: pointer;
+  background: rgb(var(--accent-color));
+  border: none;
+}
+
+.cartCardSubtract {
+  border-radius: 20px 0 0 20px;
+  padding-left: 0.75rem;
+}
+
+.cartCardAdd {
+  border-radius: 0 20px 20px 0;
+  padding-right: 0.75rem;
+}

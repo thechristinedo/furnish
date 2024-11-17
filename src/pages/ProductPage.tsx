@@ -1,11 +1,18 @@
-import { useParams } from "react-router-dom";
+import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 
 const ProductPage = () => {
   return (
     <>
       <Navbar />
-      <div>ProductPage</div>
+
+      <section className="productPage">
+        <div className="productPageContainer">
+          
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 };

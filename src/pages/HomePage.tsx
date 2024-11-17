@@ -51,7 +51,7 @@ const HomePage = () => {
         </div>
         <div className="homeProductsContainer">
           {products.map((product) => (
-            <ProductCard {...product} />
+            <ProductCard key={product.id} {...product} />
           ))}
         </div>
       </section>

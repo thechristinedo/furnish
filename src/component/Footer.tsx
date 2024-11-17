@@ -25,6 +25,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <p>© 2024 Christine Do. All Rights Reserved</p>
       </div>
     </footer>
   );
