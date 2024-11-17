@@ -14,8 +14,7 @@ const CartCard = ({ id, quantity }: CardCardProp) => {
 
   const imgUrl = `../../public/imgs/${product.url}`;
 
-  const { increaseCartQuantity, decreaseCartQuantity, getItemQuantity } =
-    useShoppingCart();
+  const { increaseCartQuantity, decreaseCartQuantity } = useShoppingCart();
 
   return (
     <>
