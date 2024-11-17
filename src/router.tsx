@@ -5,6 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import Dashboard from "./pages/Dashboard";
 import ErrorPage from "./pages/ErrorPage";
 import Contact from "./pages/Contact";
+import ProductDisplay from "./component/ProductDisplay";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
   {
     path: "/product",
     element: <ProductPage />,
+  },
+  {
+    path: "/product/:productId",
+    element: <ProductDisplay />,
   },
   {
     path: "/contact",

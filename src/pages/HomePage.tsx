@@ -12,17 +12,19 @@ const HomePage = () => {
     <>
       <Navbar />
 
-      <section className="heroContainer">
-        <div className="heroTextContainer">
-          <h1 className="heroTitle">Carefully Crafted for Comfort</h1>
-          <h3 className="heroDescription">
-            because home is where comfort resides at
-          </h3>
-        </div>
-        <div className="heroButtonContainer">
-          <button className="heroButton">
-            <Link to="/product">Shop Now</Link>
-          </button>
+      <section className="homeHero">
+        <div className="heroContainer">
+          <div className="heroTextContainer">
+            <h1 className="heroTitle">Carefully Crafted for Comfort</h1>
+            <h3 className="heroDescription">
+              because home is where comfort resides at
+            </h3>
+          </div>
+          <div className="heroButtonContainer">
+            <button className="heroButton">
+              <Link to="/product">Shop Now</Link>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -44,7 +46,7 @@ const HomePage = () => {
 
       <section className="homeProducts">
         <div className="homeProductsText">
-          <h2>Our Bestsellers</h2>
+          <h2>Some of our delicately crafted works</h2>
         </div>
         <div className="homeProductsContainer">
           {products.map((product) => (
@@ -54,17 +56,19 @@ const HomePage = () => {
       </section>
 
       <section className="homeFooter">
-        <div className="homeFooterText">
-          <h2>Discover What You Need</h2>
-          <p>
-            We help our customers bring their inspirations into reality. With
-            24/7 customer support and a dedicated support team, we will gladly
-            provide you with the help you need.
-          </p>
+        <div className="homeFooterContainer">
+          <div className="homeFooterText">
+            <h2>Discover What You Need</h2>
+            <p>
+              We help our customers bring their inspirations into reality. With
+              24/7 customer support and a dedicated support team, we will gladly
+              provide you with the help you need.
+            </p>
+          </div>
+          <button>
+            <Link to="/dashboard">Learn More</Link>
+          </button>
         </div>
-        <button>
-          <Link to="/dashboard">Learn More</Link>
-        </button>
       </section>
     </>
   );

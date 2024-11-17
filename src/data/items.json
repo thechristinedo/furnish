@@ -4,18 +4,21 @@
       "id": 1,
       "name": "Antique Wooden Stool",
       "price": "34.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
       "url": "image1.jpg"
     },
     {
       "id": 2,
       "name": "Modern Accent Armchair",
       "price": "179.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
       "url": "image2.jpg"
     },
     {
       "id": 3,
       "name": "Sturdy Arch Frame Garment Rack",
-      "price": "34.99",
+      "price": "89.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
       "url": "image3.jpg"
     }
   ]

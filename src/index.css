@@ -20,13 +20,20 @@ a {
   color: inherit;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 4rem;
+}
+
 .navContainer {
-  padding: 1.5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
   height: 80px;
+  width: 100%;
 }
 
 .navList {
@@ -49,17 +56,18 @@ a {
 }
 
 .heroContainer {
-  height: calc(100vh - 80px - 2rem);
+  height: calc(100vh - 80px);
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
   background: url(/public/imgs/heroimg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 
 .heroTextContainer {
@@ -88,7 +96,8 @@ a {
   justify-content: center;
 }
 
-.heroButton {
+.heroButton,
+.productAddButton {
   font-family: "Work Sans";
   font-size: 1.25rem;
   font-weight: 600;
@@ -105,7 +114,8 @@ a {
 }
 
 .homeAbout {
-  padding: 10rem 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .aboutTextContainer {
@@ -131,19 +141,61 @@ a {
 /*************************************/
 
 .homeProducts {
-  padding: 10rem 4rem;
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* padding-left: 4rem;
+  padding-right: 4rem; */
+}
+
+.homeProductsText {
+  padding: 4rem;
+  font-size: 2rem;
 }
 
 .homeProductsContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 4rem;
+}
+
+.homeCardContainer {
+  background: rgb(var(--background-color));
+  padding: 2.2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 5px gray;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
+
+  transition: scale 1s;
+}
+
+.homeCardImgContainer {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.homeCardImgContainer:hover .homeCardImg {
+  transform: scale(1.2);
+}
+
+.homeCardImg {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.homeCardName {
+  cursor: pointer;
+  font-family: "Forum";
 }
 
 /*************************************/
 
-.homeFooter {
+.homeFooterContainer {
   height: 600px;
 
   background-image: linear-gradient(
@@ -161,7 +213,6 @@ a {
 }
 
 .homeFooterText {
-  font-family: "Montserrat";
   text-align: right;
   padding: 5rem;
 }
@@ -199,3 +250,53 @@ a {
   transition: 0.3s;
   background: rgba(var(--accent-color), 0.8);
 }
+
+.homeHero,
+.homeAbout,
+.homeProducts {
+  padding-bottom: 10rem;
+}
+
+/******************************************************************/
+
+.productDisplayContainer {
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 0 4rem;
+}
+
+.productDisplayContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.productDisplayTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+}
+
+.productTitleContainer h1 {
+  font-family: "Forum";
+  font-size: 2rem;
+}
+
+.productTitleContainer h3 {
+  font-family: "Works San";
+  font-weight: 500;
+  font-style: italic;
+}
+
+.productAddButton:hover {
+  transition: 0.3s;
+  background: rgb(240, 150, 40);
+}
+
+/******************************************************************/

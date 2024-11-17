@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type ProductCardProps = {
   id: number;
   name: string;
@@ -5,16 +7,24 @@ type ProductCardProps = {
   url: string;
 };
 
-import image from "../../public/imgs/heroimg.jpg";
-
 const ProductCard = ({ id, name, price, url }: ProductCardProps) => {
   const imgUrl = `../../public/imgs/${url}`;
+  const linkUrl = `/product/${id}`;
+
   return (
     <>
-      <div>
-        <img style={{ width: "100%", height: "auto" }} src={imgUrl}></img>
-        <h1>{name}</h1>
-        <p>${price}</p>
+      <div className="homeCardContainer">
+        <div className="homeCardImgContainer">
+          <Link to={linkUrl}>
+            <img className="homeCardImg" src={imgUrl} />
+          </Link>
+        </div>
+        <div className="homeCardDescription">
+          <Link to={linkUrl}>
+            <h1 className="homeCardName">{name}</h1>
+          </Link>
+          <p className="homeCardPrice">${price}</p>
+        </div>
       </div>
     </>
   );
