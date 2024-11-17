@@ -4,6 +4,7 @@ import Navbar from "../component/Navbar";
 import items from "../data/items.json";
 import "../index.css";
 import ProductCard from "../component/ProductCard";
+import Footer from "../component/Footer";
 
 const HomePage = () => {
   const { items: products } = items;
@@ -70,6 +71,8 @@ const HomePage = () => {
           </button>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };
