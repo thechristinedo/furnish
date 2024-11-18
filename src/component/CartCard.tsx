@@ -14,13 +14,14 @@ const CartCard = ({ id, quantity }: CardCardProp) => {
 
   const imgUrl = `../../public/imgs/${product.url}`;
 
-  const { increaseCartQuantity, decreaseCartQuantity } = useShoppingCart();
+  const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
+    useShoppingCart();
 
   return (
     <>
       <div className="cartCardContainer">
-        <div className="cartCardImg">
-          <img src={imgUrl} />
+        <div className="cartCardImgContainer">
+          <img className="cartCardImg" src={imgUrl} />
         </div>
 
         <div className="cartCardInfo">

@@ -3,9 +3,6 @@ import CartCard from "./CartCard";
 
 const ShoppingCart = () => {
   const { cartItems } = useShoppingCart();
-  console.log(cartItems);
-
-  cartItems.forEach((item) => console.log(item.id, item.quantity));
 
   return (
     <>

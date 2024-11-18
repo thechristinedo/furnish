@@ -36,7 +36,7 @@ const ProductPage = () => {
       <Navbar />
 
       <section className="productPage">
-        <div className="productPageContainer">
+        <div className="productPageContainer container">
           <div className="productPageSearch">
             <input
               className="productPageInput"
@@ -74,7 +74,12 @@ const ProductPage = () => {
                         .toLowerCase()
                         .includes(searchInput.toLowerCase())
                     ) {
-                      return <ProductCard {...filteredProduct} />;
+                      return (
+                        <ProductCard
+                          key={filteredProduct.name}
+                          {...filteredProduct}
+                        />
+                      );
                     }
                   })
               : products.map((product) => {
@@ -83,7 +88,7 @@ const ProductPage = () => {
                       .toLowerCase()
                       .includes(searchInput.toLowerCase())
                   ) {
-                    return <ProductCard {...product} />;
+                    return <ProductCard key={product.name} {...product} />;
                   }
                 })}
           </div>

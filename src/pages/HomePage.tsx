@@ -50,9 +50,9 @@ const HomePage = () => {
           <h2>Some of our delicately crafted works</h2>
         </div>
         <div className="homeProductsContainer">
-          {products.map((product) => (
+          {/* {products.map((product) => (
             <ProductCard key={product.id} {...product} />
-          ))}
+          ))} */}
         </div>
       </section>
 

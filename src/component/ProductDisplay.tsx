@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import items from "../data/items.json";
@@ -22,6 +22,10 @@ const ProductDisplay = () => {
 
   const imgUrl = `../../public/imgs/${product.url}`;
   const { increaseCartQuantity } = useShoppingCart();
+
+  const addCartAnimation = function () {
+    console.log("+1");
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,10 +52,14 @@ const ProductDisplay = () => {
               <button
                 type="button"
                 className="productAddButton"
-                onClick={() => increaseCartQuantity(product.id)}
+                onClick={(e) => {
+                  increaseCartQuantity(product.id);
+                  addCartAnimation();
+                }}
               >
                 Add to Cart
               </button>
+              <span className="productAddButtonIcon">+1</span>
             </div>
           </div>
         </div>
