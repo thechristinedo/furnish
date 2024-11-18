@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 import ProductCard from "../component/ProductCard";
@@ -7,6 +7,7 @@ import items from "../data/items.json";
 
 const ProductPage = () => {
   const [activeTag, setActiveTag] = useState("");
+  const [searchInput, setSearchInput] = useState("");
   const { items: products } = items;
 
   const uniqueTags = Array.from(
@@ -24,6 +25,12 @@ const ProductPage = () => {
     }
   };
 
+  const handleInputChange = function (e: React.ChangeEvent<HTMLInputElement>) {
+    const target = e.target as HTMLInputElement;
+    setSearchInput(target.value);
+    console.log(target.value);
+  };
+
   return (
     <>
       <Navbar />
@@ -35,6 +42,7 @@ const ProductPage = () => {
               className="productPageInput"
               type="text"
               placeholder="Search..."
+              onChange={handleInputChange}
             />
             <svg
               className="productPageSearchIcon"
@@ -60,10 +68,24 @@ const ProductPage = () => {
             {activeTag.length > 0
               ? products
                   .filter((product) => product.tag === activeTag)
-                  .map((filteredProduct) => (
-                    <ProductCard {...filteredProduct} />
-                  ))
-              : products.map((product) => <ProductCard {...product} />)}
+                  .map((filteredProduct) => {
+                    if (
+                      filteredProduct.name
+                        .toLowerCase()
+                        .includes(searchInput.toLowerCase())
+                    ) {
+                      return <ProductCard {...filteredProduct} />;
+                    }
+                  })
+              : products.map((product) => {
+                  if (
+                    product.name
+                      .toLowerCase()
+                      .includes(searchInput.toLowerCase())
+                  ) {
+                    return <ProductCard {...product} />;
+                  }
+                })}
           </div>
         </div>
       </section>
