@@ -15,7 +15,13 @@ const ProductPage = () => {
 
   const handleClick = function (e: React.MouseEvent<HTMLButtonElement>) {
     const target = e.target as HTMLButtonElement;
-    setActiveTag(target.innerText);
+
+    if (target.innerText === activeTag) {
+      target.classList.toggle("activeTag");
+      setActiveTag("");
+    } else {
+      setActiveTag(target.innerText);
+    }
   };
 
   return (
@@ -51,15 +57,13 @@ const ProductPage = () => {
             ))}
           </div>
           <div className="productPageGrid">
-            {products.map((product) => {
-              return (
-                <>
-                  <div key={product.id} className="productPageGridItem">
-                    <ProductCard {...product} />
-                  </div>
-                </>
-              );
-            })}
+            {activeTag.length > 0
+              ? products
+                  .filter((product) => product.tag === activeTag)
+                  .map((filteredProduct) => (
+                    <ProductCard {...filteredProduct} />
+                  ))
+              : products.map((product) => <ProductCard {...product} />)}
           </div>
         </div>
       </section>
