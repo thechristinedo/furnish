@@ -5,6 +5,7 @@
       "name": "Antique Wooden Stool",
       "price": "34.99",
       "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Seating",
       "url": "image1.jpg"
     },
     {
@@ -12,6 +13,7 @@
       "name": "Modern Accent Armchair",
       "price": "179.99",
       "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Seating",
       "url": "image2.jpg"
     },
     {
@@ -19,7 +21,40 @@
       "name": "Sturdy Arch Frame Garment Rack",
       "price": "89.99",
       "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Bedding",
       "url": "image3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Silver Swing-Arm Wall Lamp",
+      "price": "129.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Lighting",
+      "url": "image4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Brown Leather Armchair",
+      "price": "689.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Seating",
+      "url": "image5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Diana Eden 8-Drawer Dresser",
+      "price": "349.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Bedding",
+      "url": "image6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Assorted Color Pillows Set of 3",
+      "price": "69.99",
+      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "tag": "Bedding",
+      "url": "image7.jpg"
     }
   ]
 }

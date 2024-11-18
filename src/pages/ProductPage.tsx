@@ -1,10 +1,22 @@
+import { useEffect, useState } from "react";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 import ProductCard from "../component/ProductCard";
+import Tag from "../component/Tag";
 import items from "../data/items.json";
 
 const ProductPage = () => {
+  const [activeTag, setActiveTag] = useState("");
   const { items: products } = items;
+
+  const uniqueTags = Array.from(
+    new Set(products.map((product) => product.tag))
+  );
+
+  const handleClick = function (e: React.MouseEvent<HTMLButtonElement>) {
+    const target = e.target as HTMLButtonElement;
+    setActiveTag(target.innerText);
+  };
 
   return (
     <>
@@ -29,21 +41,20 @@ const ProductPage = () => {
             </svg>
           </div>
           <div className="productPageTagContainer">
-            <button className="productPageTag" type="button">
-              Lighting
-            </button>
-            <button className="productPageTag" type="button">
-              Seating
-            </button>
-            <button className="productPageTag" type="button">
-              Bedding
-            </button>
+            {uniqueTags.map((tag) => (
+              <Tag
+                key={tag}
+                tag={tag}
+                handleClick={handleClick}
+                isActive={activeTag === tag}
+              />
+            ))}
           </div>
           <div className="productPageGrid">
             {products.map((product) => {
               return (
                 <>
-                  <div className="productPageGridItem">
+                  <div key={product.id} className="productPageGridItem">
                     <ProductCard {...product} />
                   </div>
                 </>
