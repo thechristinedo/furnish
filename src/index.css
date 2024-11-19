@@ -215,13 +215,6 @@ body {
 
 /*************************************/
 
-.homeProducts {
-  /* display: flex;
-  justify-content: space-evenly; */
-  /* padding-left: 4rem;
-  padding-right: 4rem; */
-}
-
 .homeProductsText {
   padding: 4rem;
   font-size: 2rem;
@@ -521,6 +514,7 @@ body {
 .cartPageContentContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 5rem;
 }
 
 .cartPageCheckoutContainer {
@@ -587,6 +581,25 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+}
+
+.cartCardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartCardRemove {
+  border: none;
+  background-color: rgb(var(--background-color));
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cartCardRemove:hover {
+  transform: scale(1.25);
 }
 
 .cartCardName {

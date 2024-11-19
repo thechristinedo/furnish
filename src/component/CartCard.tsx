@@ -26,7 +26,17 @@ const CartCard = ({ id, quantity }: CardCardProp) => {
 
         <div className="cartCardInfo">
           <div className="cartCardMain">
-            <h2 className="cartCardName">{product.name}</h2>
+            <div className="cartCardTitle">
+              <h2 className="cartCardName">{product.name}</h2>
+              <button
+                type="button"
+                className="cartCardRemove"
+                onClick={() => removeFromCart(product.id)}
+              >
+                &times;
+              </button>
+            </div>
+            
             <h3 className="cartCardPrice">${product.price}</h3>
           </div>
 
