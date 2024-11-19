@@ -30,7 +30,7 @@ const HomePage = () => {
       </section>
 
       <section className="homeAbout">
-        <div className="aboutTextContainer">
+        <div className="aboutTextContainer container">
           <div className="aboutTitle">
             <h3>About Us</h3>
             <h2>Our Views</h2>
@@ -46,7 +46,7 @@ const HomePage = () => {
       </section>
 
       <section className="homeProducts">
-        <div className="homeProductsText">
+        <div className="homeProductsText container">
           <h2>Some of our delicately crafted works</h2>
         </div>
         <div className="homeProductsContainer">
@@ -57,18 +57,23 @@ const HomePage = () => {
       </section>
 
       <section className="homeFooter">
-        <div className="homeFooterContainer">
-          <div className="homeFooterText">
-            <h2>Discover What You Need</h2>
-            <p>
-              We help our customers bring their inspirations into reality. With
-              24/7 customer support and a dedicated support team, we will gladly
-              provide you with the help you need.
-            </p>
+        <div className="homeFooterBackgroundContainer">
+          <div className="homeFooterContainer container">
+
+            <div className="homeFooterText">
+              <h2>Discover What You Need</h2>
+              <p>
+                We help our customers bring their inspirations into reality.
+                With 24/7 customer support and a dedicated support team, we will
+                gladly provide you with the help you need.
+              </p>
+            </div>
+
+            <button type="button">
+              <Link to="/dashboard">Learn More</Link>
+            </button>
+
           </div>
-          <button>
-            <Link to="/dashboard">Learn More</Link>
-          </button>
         </div>
       </section>
 

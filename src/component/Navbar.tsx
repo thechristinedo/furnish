@@ -1,14 +1,59 @@
 import { Link } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartProvider";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { cartQuantity } = useShoppingCart();
+
+  const handleMenuToggle = function (e: React.MouseEvent<HTMLButtonElement>) {
+    const target = e.target as HTMLElement;
+    const button = target.closest(".navMenuToggle") as HTMLButtonElement;
+    const navMenu = target
+      .closest(".navContainer")
+      ?.querySelector(".navMenu") as HTMLDivElement;
+
+    navMenu.classList.toggle("navMenuDisplay");
+
+    if (!isMenuOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Restore scrolling
+    }
+
+    button.innerHTML =
+      isMenuOpen === false
+        ? `<svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="25"
+          height="25"
+          viewBox="0 0 50 50"
+        >
+          <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+        </svg>`
+        : `<svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="25"
+            height="25"
+            viewBox="0 0 30 30"
+          >
+            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+          </svg>`;
+
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav>
       <div className="navContainer container">
         <Link to="/" className="navLogo">
           <h1>Furnish</h1>
         </Link>
+
         <ul className="navList">
           <li>
             <Link to="/dashboard" className="navLink">
@@ -40,6 +85,44 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <button
+          type="button"
+          className="navMenuToggle"
+          onClick={handleMenuToggle}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="25px"
+            height="25px"
+            viewBox="0 0 30 30"
+          >
+            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+          </svg>
+        </button>
+
+        <div className="navMenu">
+          {isMenuOpen && (
+            <ul className="navMenuContainer container">
+              <li>
+                <Link to="/dashboard" className="navMenuLink">
+                  Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link to="/product" className="navMenuLink">
+                  Products
+                </Link>
+              </li>
+              <li className="navCart">
+                <Link to="/cart" className="navMenuLink">
+                  Cart
+                </Link>
+              </li>
+            </ul>
+          )}
+        </div>
       </div>
     </nav>
   );
