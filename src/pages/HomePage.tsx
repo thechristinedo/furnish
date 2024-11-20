@@ -18,14 +18,14 @@ const HomePage = () => {
         {/* <section className="homeHero"> */}
         <section className="home-hero padding-bottom-400">
           <div className="background-img-container">
-            <div className="container text-align-center">
+            <div className="container text-align-center padding-block-700">
               <h1 className="fs-primary-heading fw-bold">
                 Carefully Crafted for Comfort
               </h1>
               <h3 className="fs-body">
                 because home is where comfort resides at
               </h3>
-              <Button>
+              <Button className="margin-top">
                 <Link to="/product">Shop Now</Link>
               </Button>
             </div>
@@ -58,12 +58,12 @@ const HomePage = () => {
         {/* <section className="homeFooter"> */}
         <section className="home-cta text-accent-400 padding-bottom-400">
           <div className="background-img-container">
-            <div className="container">
+            <div className="container padding-block-600 text-align-right cta-flex">
               <div>
                 <h2 className="fs-secondary-heading fw-bold">
                   Discover What You Need
                 </h2>
-                <p>
+                <p className="cta-text">
                   We help our customers bring their inspirations into reality.
                   With 24/7 customer support and a dedicated support team, we
                   will gladly provide you with the help you need.
