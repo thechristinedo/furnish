@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../component/Navbar";
-
 import items from "../data/items.json";
 import "../index.css";
-import ProductCard from "../component/ProductCard";
 import Footer from "../component/Footer";
 import Button from "../component/Button";
 
@@ -15,7 +13,6 @@ const HomePage = () => {
       <Navbar />
 
       <main>
-        {/* <section className="homeHero"> */}
         <section className="home-hero padding-bottom-400">
           <div className="background-img-container">
             <div className="container text-align-center padding-block-700">
@@ -32,7 +29,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* <section className="homeAbout"> */}
         <section className="home-about padding-bottom-400">
           <div className="container">
             <div className="grid columns one-third-columns">
@@ -46,7 +42,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* <section className="homeProducts"> */}
         <section className="home-featured padding-bottom-400">
           <div className="container">
             <h2 className="fs-secondary-heading fw-bold">
@@ -55,7 +50,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* <section className="homeFooter"> */}
         <section className="home-cta text-accent-400">
           <div className="background-img-container">
             <div className="container padding-block-600 text-align-right cta-flex">

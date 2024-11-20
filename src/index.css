@@ -150,7 +150,6 @@ body {
 
   .nav-list {
     display: grid;
-    gap: 1rem;
     text-align: center;
     font-weight: var(--fw-bold);
   }
@@ -168,12 +167,11 @@ body {
   justify-items: center;
   gap: 2rem;
   text-align: center;
+  align-items: center;
 }
 
 .footer-nav-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -327,7 +325,7 @@ body {
 
 .productPageContent {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -358,61 +356,37 @@ body {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 /* productdisplaypage */
 
-.productDisplayContainer {
+.product-display {
   min-height: calc(100vh - 80px);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  gap: 2rem;
-
-  padding: 0 4rem;
 }
 
-.productDisplayTextContainer {
+.product-display-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 600px;
 }
 
-.productTitleContainer h1 {
-  font-size: 2rem;
-}
-
-.productTitleContainer h3 {
-  font-weight: 500;
-}
-
-.productButtonContainer {
+.product-button-container {
   display: flex;
   align-items: center;
   position: relative;
   width: fit-content;
 }
 
-.productAddButton {
-  transition: 0.3s;
-}
-
-.productAddButton:hover {
-  background: rgb(var(--accent-dark-color));
-}
-
-.productAddButtonIcon {
+.product-popup {
   position: absolute;
   left: 110%;
   opacity: 0;
-  color: rgb(var(--accent-dark-color));
+  color: var(--clr-accent-400);
   transition: 0.15s;
 }
 
-.productAddButton:active + .productAddButtonIcon {
+.product-display-add-btn:active + .product-popup {
   opacity: 100%;
   transform: scale(2);
 }
@@ -677,15 +651,11 @@ body {
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* when width > 800px */
 @media (min-width: 50em) {
-  .even-columns {
-    grid-auto-columns: 1fr;
-  }
-
   .columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -714,4 +684,9 @@ body {
 
 .margin-top {
   margin-top: 1rem;
+}
+
+.center-grid-items {
+  justify-items: center;
+  align-items: center;
 }

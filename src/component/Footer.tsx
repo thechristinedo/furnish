@@ -9,7 +9,7 @@ const Footer = () => {
             <ul role="list" className="footer-nav-list">
               <li>
                 <Link to="/dashboard" className="nav-link">
-                  <p>Dashboard</p>
+                  <p>About</p>
                 </Link>
               </li>
               <li>
