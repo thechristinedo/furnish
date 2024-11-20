@@ -56,7 +56,7 @@ const HomePage = () => {
         </section>
 
         {/* <section className="homeFooter"> */}
-        <section className="home-cta text-accent-400 padding-bottom-400">
+        <section className="home-cta text-accent-400">
           <div className="background-img-container">
             <div className="container padding-block-600 text-align-right cta-flex">
               <div>
@@ -78,7 +78,7 @@ const HomePage = () => {
         </section>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

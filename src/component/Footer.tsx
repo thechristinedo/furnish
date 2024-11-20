@@ -3,29 +3,33 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="footerContainer container">
-        <div className="footerLeftContainer">
-          <div className="footerLogoContainer">
-            <h1 className="footerLogo">Furnish</h1>
-            <p className="footerSlogan">
-              because home is where comfort resides at
-            </p>
+      <div className="container padding-block-900">
+        <div className="footer-container">
+          <nav className="footer-navigation ">
+            <ul role="list" className="footer-nav-list">
+              <li>
+                <Link to="/dashboard" className="nav-link">
+                  <p>Dashboard</p>
+                </Link>
+              </li>
+              <li>
+                <Link to="/product" className="nav-link">
+                  <p>Product</p>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="nav-link">
+                  <p>Contact</p>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <h1 className="footer-logo fw-bold fs-600">Furnish</h1>
+            <p>© 2024 Christine Do. All Rights Reserved</p>
           </div>
         </div>
-        <div className="footerLinksContainer">
-          <ul className="footerList">
-            <li className="footerLink">
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li className="footerLink">
-              <Link to="/product">Product</Link>
-            </li>
-            <li className="footerLink">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <p>© 2024 Christine Do. All Rights Reserved</p>
       </div>
     </footer>
   );

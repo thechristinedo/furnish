@@ -47,8 +47,8 @@ const Navbar = () => {
 
   return (
     <header className="primary-header">
-      <div className="container">
-        <div className="nav-container">
+      <div className="container padding-block-400">
+        <div className="nav-container flex">
           <Link to="/" className="nav-link">
             <h1 className="nav-logo fw-bold fs-600">Furnish</h1>
           </Link>
