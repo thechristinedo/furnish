@@ -65,7 +65,7 @@ const ProductDisplay = () => {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

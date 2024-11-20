@@ -56,7 +56,7 @@ const CartPage = () => {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
