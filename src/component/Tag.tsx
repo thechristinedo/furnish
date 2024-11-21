@@ -8,7 +8,7 @@ const Tag = ({ tag, isActive, handleClick }: TagProps) => {
   return (
     <>
       <button
-        className={`productPageTag ${isActive ? "activeTag" : ""}`}
+        className={`tag ${isActive ? "active-tag" : ""}`}
         type="button"
         onClick={handleClick}
       >

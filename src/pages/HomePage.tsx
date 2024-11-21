@@ -17,7 +17,7 @@ const HomePage = () => {
           <div className="background-img-container">
             <div className="container text-align-center padding-block-700">
               <h1 className="fs-primary-heading fw-bold">
-                Carefully Crafted for Comfort
+                Crafted for Comfort
               </h1>
               <h3 className="fs-body">
                 because home is where comfort resides at

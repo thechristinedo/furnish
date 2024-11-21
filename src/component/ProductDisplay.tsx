@@ -31,8 +31,8 @@ const ProductDisplay = () => {
     <>
       <Navbar />
 
-      <section className="product-display">
-        <div className="container grid columns center-grid-items padding-block-700">
+      <section className="product-display padding-block-700">
+        <div className="container grid columns center-grid-items">
           <img
             className="product-display-img"
             src={imgUrl}
