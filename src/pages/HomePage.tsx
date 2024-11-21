@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import Navbar from "../component/Navbar";
-import items from "../data/items.json";
 import "../index.css";
 import Footer from "../component/Footer";
 import Button from "../component/Button";
+import Carousel from "../component/Carousel";
 
 const HomePage = () => {
-  const { items: products } = items;
-
   return (
     <>
       <Navbar />
@@ -47,6 +45,9 @@ const HomePage = () => {
             <h2 className="fs-secondary-heading fw-bold">
               Some of our delicately crafted works
             </h2>
+            <div className="carousel margin-top">
+              <Carousel autoSlide={true} />
+            </div>
           </div>
         </section>
 
