@@ -19,37 +19,33 @@ const CartCard = ({ id, quantity }: CardCardProp) => {
 
   return (
     <>
-      <div className="cartCardContainer">
-        <div className="cartCardImgContainer">
-          <img className="cartCardImg" src={imgUrl} />
-        </div>
+      <div className="cart-item ">
+        <img src={imgUrl} />
 
-        <div className="cartCardInfo">
-          <div className="cartCardMain">
-            <div className="cartCardTitle">
-              <h2 className="cartCardName">{product.name}</h2>
-              <button
-                type="button"
-                className="cartCardRemove"
-                onClick={() => removeFromCart(product.id)}
-              >
-                &times;
-              </button>
-            </div>
-            
-            <h3 className="cartCardPrice">${product.price}</h3>
+        <div className="cart-item-container">
+          <div className="cart-item-info">
+            <h2 className="fs-600 fw-bold">{product.name}</h2>
+            <button
+              type="button"
+              className="cart-delete"
+              onClick={() => removeFromCart(product.id)}
+            >
+              &times;
+            </button>
+
+            <h3 className="fs-500 fw-semi-bold">${product.price}</h3>
           </div>
 
-          <div className="cartCardAmount">
+          <div className="cart-amount">
             <button
-              className="cartCardSubtract"
+              className="cart-decrement"
               onClick={() => decreaseCartQuantity(product.id)}
             >
               -
             </button>
-            <p className="cartCardQuantity">{quantity}</p>
+            <p className="cart-quantity">{quantity}</p>
             <button
-              className="cartCardAdd"
+              className="cart-increment"
               onClick={() => increaseCartQuantity(product.id)}
             >
               +

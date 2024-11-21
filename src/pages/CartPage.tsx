@@ -1,6 +1,6 @@
+import CartCard from "../component/CartCard";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
-import ShoppingCart from "../component/ShoppingCart";
 import { useShoppingCart } from "../context/ShoppingCartProvider";
 import items from "../data/items.json";
 
@@ -17,37 +17,39 @@ const CartPage = () => {
       }, 0) * 100
     ) / 100
   ).toFixed(2);
+
   return (
     <>
       <Navbar />
 
-      <section className="cartPage">
-        <div className="cartPageContainer container">
-          <div className="cartPageTextContainer">
-            <h2 className="cartPageTitle">Shopping Cart</h2>
-          </div>
+      <section className="cart-page">
+        <div className="container padding-block-700">
+          <h2 className="fs-secondary-heading fw-bold">Shopping Cart</h2>
 
-          <div className="cartPageContentContainer">
-            <div className="cartPageItemsContainer">
-              <ShoppingCart />
+          <div className="cart-content">
+            <div className="cart-items-container margin-top">
+              {cartItems.map((item) => {
+                return <CartCard {...item} />;
+              })}
             </div>
-            <div className="cartPageCheckoutContainer">
-              {/* checkout */}
-              <h3>Order Summary</h3>
-              <div className="cartPageSummary">
-                <div className="cartPageSection">
+
+            <div className="cart-checkout-container">
+              <h3 className="fs-600 fw-bold">Order Summary</h3>
+
+              <div className="cart-summary">
+                <div className="cart-fee-row">
                   <p>Subtotal:</p>
                   <p>${total}</p>
                 </div>
-                <div className="cartPageSection">
+                <div className="cart-fee-row">
                   <p>Standard Shipping:</p>
                   <p>Free</p>
                 </div>
-                <div className="cartPageSection" style={{ fontWeight: "600" }}>
-                  <p>Estimated Total:</p>
-                  <p>${total}</p>
+                <div className="cart-fee-row">
+                  <p className="fw-bold">Estimated Total:</p>
+                  <p className="fw-bold">${total}</p>
                 </div>
-                <button className="cartPageCheckoutButton" type="button">
+                <button className="cart-checkout-btn" type="button">
                   Proceed to Checkout
                 </button>
               </div>
@@ -56,7 +58,7 @@ const CartPage = () => {
         </div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
