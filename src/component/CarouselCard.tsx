@@ -22,13 +22,13 @@ const CarouselCard = ({
     <>
       <Link to={linkUrl}>
         <div className="carousel-card-container">
-          <img src={imgUrl} />
+          <div className="carousel-img-container">
+            <img src={imgUrl} />
+          </div>
           <div className="carousel-card-description">
             <h2 className="fw-semi-bold fs-600">{name}</h2>
             <h3 className="fs-500 fw-semi-bold">${price}</h3>
-            <p className="carousel-text-description margin-top">
-              {description}
-            </p>
+            <p className="carousel-text-description">{description}</p>
           </div>
         </div>
       </Link>
