@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Antique Wooden Stool",
       "price": "34.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Add a touch of timeless elegance to any space with our Antique Wooden Stool. Crafted with precision and care, this beautifully weathered stool showcases intricate woodwork and a vintage design that brings character and charm to both modern and rustic interiors. Made from high-quality, sustainably sourced wood, the stool features a sturdy construction with a classic finish that highlights the natural grain of the wood. Its versatile size makes it perfect as extra seating, a footrest, or even a decorative accent in your living room, entryway, or bedroom.",
       "tag": "Seating",
       "url": "image1.jpg"
     },
@@ -12,23 +12,23 @@
       "id": 2,
       "name": "Modern Accent Armchair",
       "price": "179.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Elevate your home or office with the timeless sophistication of our Modern Accent Armchair. This carefully crafted chair combines the strength of durable wood with the comfort of soft, plush padding. The rich, natural wood frame adds a touch of rustic charm, beautifully complemented by the refreshing green seat cushion. The vibrant green fabric not only brings a pop of color to your space but also provides an inviting, comfortable seating experience.",
       "tag": "Seating",
       "url": "image2.jpg"
     },
     {
       "id": 3,
-      "name": "Sturdy Arch Frame Garment Rack",
+      "name": "Sturdy Arch Frame Rack",
       "price": "89.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Bring both elegance and functionality into your home with our Sturdy Arch Frame Rack. Crafted from high-quality, sustainably sourced wood, this rack features a stunning arched design that combines a touch of classic charm with modern appeal. The natural wood finish enhances its timeless beauty, making it a versatile addition to any room.",
       "tag": "Bedding",
       "url": "image3.jpg"
     },
     {
       "id": 4,
-      "name": "Silver Swing-Arm Wall Lamp",
+      "name": "Silver Swing-Arm Lamp",
       "price": "129.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Illuminate your space with style and versatility with our Silver Swing-Arm Lamp. Designed to offer both function and sophistication, this lamp features a sleek silver finish that complements a variety of decor styles, from modern and industrial to classic and minimalist. The adjustable swing arm allows you to direct the light exactly where you need it, whether you’re reading in bed, working at your desk, or adding ambient lighting to any room.",
       "tag": "Lighting",
       "url": "image4.jpg"
     },
@@ -36,23 +36,23 @@
       "id": 5,
       "name": "Brown Leather Armchair",
       "price": "689.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Add a touch of timeless luxury and comfort to your living space with our Brown Leather Armchair. Crafted from premium, supple leather, this armchair features a rich brown hue that complements both classic and contemporary interiors. The soft, yet durable leather upholstery is not only inviting but also easy to maintain, ensuring it remains a lasting investment in both style and comfort.",
       "tag": "Seating",
       "url": "image5.jpg"
     },
     {
       "id": 6,
-      "name": "Diana Eden 8-Drawer Dresser",
+      "name": "Diana Eden Dresser",
       "price": "349.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Maximize your storage space with our elegant Diana Eden Dresser, designed to blend functionality with timeless style. Crafted from high-quality wood, this spacious dresser features eight generously sized drawers, providing ample room for organizing clothes, linens, or accessories. Its sleek, clean lines and subtle finish complement a variety of bedroom styles, from modern to traditional, making it a versatile addition to any home.",
       "tag": "Bedding",
       "url": "image6.jpg"
     },
     {
       "id": 7,
-      "name": "Assorted Color Pillows Set of 3",
+      "name": "Assorted Color Pillows",
       "price": "69.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Brighten up your space with our Assorted Color Pillows Set of 3. This vibrant collection brings a pop of color and personality to any room, featuring three uniquely designed pillows in an array of complementary hues. Crafted with soft, high-quality fabric, each pillow offers both comfort and style, perfect for accenting your sofa, bed, or favorite reading chair.",
       "tag": "Bedding",
       "url": "image7.jpg"
     }
@@ -62,7 +62,7 @@
       "id": 2,
       "name": "Modern Accent Armchair",
       "price": "179.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Elevate your home or office with the timeless sophistication of our Modern Accent Armchair. This carefully crafted chair combines the strength of durable wood with the comfort of soft, plush padding. The rich, natural wood frame adds a touch of rustic charm, beautifully complemented by the refreshing green seat cushion. The vibrant green fabric not only brings a pop of color to your space but also provides an inviting, comfortable seating experience.",
       "tag": "Seating",
       "url": "image2.jpg"
     },
@@ -70,7 +70,7 @@
       "id": 4,
       "name": "Silver Swing-Arm Wall Lamp",
       "price": "129.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Illuminate your space with style and versatility with our Silver Swing-Arm Lamp. Designed to offer both function and sophistication, this lamp features a sleek silver finish that complements a variety of decor styles, from modern and industrial to classic and minimalist. The adjustable swing arm allows you to direct the light exactly where you need it, whether you’re reading in bed, working at your desk, or adding ambient lighting to any room.",
       "tag": "Lighting",
       "url": "image4.jpg"
     },
@@ -78,7 +78,7 @@
       "id": 6,
       "name": "Diana Eden 8-Drawer Dresser",
       "price": "349.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Maximize your storage space with our elegant Diana Eden Dresser, designed to blend functionality with timeless style. Crafted from high-quality wood, this spacious dresser features eight generously sized drawers, providing ample room for organizing clothes, linens, or accessories. Its sleek, clean lines and subtle finish complement a variety of bedroom styles, from modern to traditional, making it a versatile addition to any home.",
       "tag": "Bedding",
       "url": "image6.jpg"
     },
@@ -86,7 +86,7 @@
       "id": 7,
       "name": "Assorted Color Pillows Set of 3",
       "price": "69.99",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Sed parturient ultricies lacinia odio conubia. Facilisis turpis erat luctus penatibus facilisis. Efficitur sit suspendisse tellus elit class; sem primis metus. Integer id rutrum libero phasellus torquent. Phasellus imperdiet dictumst etiam cras cubilia tincidunt sapien.",
+      "description": "Brighten up your space with our Assorted Color Pillows Set of 3. This vibrant collection brings a pop of color and personality to any room, featuring three uniquely designed pillows in an array of complementary hues. Crafted with soft, high-quality fabric, each pillow offers both comfort and style, perfect for accenting your sofa, bed, or favorite reading chair.",
       "tag": "Bedding",
       "url": "image7.jpg"
     }

@@ -42,10 +42,10 @@ const HomePage = () => {
 
         <section className="home-featured padding-bottom-400">
           <div className="container">
-            <h2 className="fs-secondary-heading fw-bold">
+            <h2 className="fs-secondary-heading fw-bold text-align-center">
               Some of our delicately crafted works
             </h2>
-            <div className="carousel margin-top">
+            <div className="carousel">
               <Carousel autoSlide={true} />
             </div>
           </div>

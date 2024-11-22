@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
+
 type CarouselCardProps = {
   id: number;
   name: string;
   price: string;
   description: string;
-  tag: string;
   url: string;
 };
 
@@ -12,19 +13,25 @@ const CarouselCard = ({
   name,
   price,
   description,
-  tag,
   url,
 }: CarouselCardProps) => {
-  const imgUrl = "../../public/imgs/";
+  const imgUrl = `../../public/imgs/${url}`;
+  const linkUrl = `/product/${id}`;
 
   return (
     <>
-      <div className="carousel-card-container">
-        <img src={`${imgUrl}${url}`} />
-        <div>{name}</div>
-        <div>{price}</div>
-        <div>{description}</div>
-      </div>
+      <Link to={linkUrl}>
+        <div className="carousel-card-container">
+          <img src={imgUrl} />
+          <div className="carousel-card-description">
+            <h2 className="fw-semi-bold fs-600">{name}</h2>
+            <h3 className="fs-500 fw-semi-bold">${price}</h3>
+            <p className="carousel-text-description margin-top">
+              {description}
+            </p>
+          </div>
+        </div>
+      </Link>
     </>
   );
 };
