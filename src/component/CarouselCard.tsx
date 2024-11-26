@@ -15,7 +15,7 @@ const CarouselCard = ({
   description,
   url,
 }: CarouselCardProps) => {
-  const imgUrl = `../../public/${url}`;
+  const imgUrl = `../../imgs/${url}`;
   const linkUrl = `/product/${id}`;
 
   return (
