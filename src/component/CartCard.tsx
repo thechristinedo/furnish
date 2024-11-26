@@ -12,7 +12,7 @@ const CartCard = ({ id, quantity }: CardCardProp) => {
 
   if (product == null) return;
 
-  const imgUrl = `../../public/imgs/${product.url}`;
+  const imgUrl = `../../imgs/${product.url}`;
 
   const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
     useShoppingCart();

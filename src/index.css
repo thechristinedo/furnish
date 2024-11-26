@@ -201,7 +201,7 @@ body {
 /* homepage hero */
 
 .home-hero .background-img-container {
-  background-image: url(/public/imgs/heroimg.jpg);
+  background-image: url(/imgs/heroimg.jpg);
   min-height: calc(100vh - 80px - 2rem);
 }
 
@@ -213,7 +213,7 @@ body {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/public/imgs/heroimg2.jpg);
+    url(/imgs/heroimg2.jpg);
 }
 
 .cta-flex {

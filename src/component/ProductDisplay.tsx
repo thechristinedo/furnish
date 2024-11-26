@@ -20,7 +20,7 @@ const ProductDisplay = () => {
     );
   }
 
-  const imgUrl = `../../public/imgs/${product.url}`;
+  const imgUrl = `../../imgs/${product.url}`;
   const { increaseCartQuantity } = useShoppingCart();
 
   useEffect(() => {
