@@ -7,7 +7,7 @@ type ProductCardProps = {
 };
 
 const ProductCard = ({ id, name, url, price }: ProductCardProps) => {
-  const imgUrl = `../../public/imgs/${url}`;
+  const imgUrl = `../../imgs/${url}`;
   const linkUrl = `/product/${id}`;
 
   return (
