@@ -8,9 +8,16 @@ const Footer = () => {
           <nav className="footer-navigation ">
             <ul role="list" className="footer-nav-list">
               <li>
-                <Link to="/dashboard" className="nav-link">
+                <a
+                  href="https://www.github.com/thechristinedo"
+                  target="_blank"
+                  className="nav-link"
+                >
+                  About
+                </a>
+                {/* <Link to="/dashboard" className="nav-link">
                   <p>About</p>
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link to="/product" className="nav-link">
@@ -18,9 +25,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="nav-link">
+                <a
+                  href="https://www.linkedin.com/in/thechristinedo/"
+                  target="_blank"
+                  className="nav-link"
+                >
+                  Contact
+                </a>
+                {/* <Link to="/contact" className="nav-link">
                   <p>Contact</p>
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </nav>

@@ -100,7 +100,7 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus-visible {
   color: var(--clr-accent-400);
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .nav-cart svg:hover,
-.nav-cart svg:focus {
+.nav-cart svg:focus-visible {
   fill: var(--clr-accent-400);
 }
 

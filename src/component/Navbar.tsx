@@ -73,9 +73,16 @@ const Navbar = () => {
           <nav className="primary-navigation">
             <ul role="list" className="nav-list">
               <li>
-                <Link to="/dashboard" className="nav-link">
+                <a
+                  href="https://www.github.com/thechristinedo"
+                  target="_blank"
+                  className="nav-link"
+                >
+                  Dashboard
+                </a>
+                {/* <Link to="/dashboard" className="nav-link">
                   <p>Dashboard</p>
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link to="/product" className="nav-link">
