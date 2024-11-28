@@ -135,7 +135,7 @@ body {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    z-index: 10;
+    z-index: 100;
   }
 
   .primary-navigation {
@@ -146,14 +146,14 @@ body {
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.15);
     border-radius: 0.5rem;
     padding: 2.5rem;
-    z-index: 10;
+    z-index: 100;
   }
 
   .overlay:before {
     content: "";
     position: fixed;
     inset: 0;
-    z-index: 9;
+    z-index: 11;
     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0/0.8));
   }
 
