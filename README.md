@@ -4,16 +4,13 @@
 </div>
 
 <h2 align="left">About 💡</h2>
-<p align="left">Furnish is an e-commerce web application built with React, designed to provide a seamless shopping experience with product search, filtering, and a dynamic selection system that includes quantity adjustments and automated price updates. It aims to enhance user shopping by offering an intuitive interface and efficient checkout process.</p>
+<p align="left">Furnish is a responsive e-commerce web application, designed to provide an intuitive and efficient shopping experience. It features advanced product search, filtering systems, and a dynamic product selection system with quantity adjustments and automated price updates. The platform delivers smooth navigation and a clean user interface, ensuring ease of use across devices. Its functionality streamlines the shopping process, making it simple and user-friendly.</p>
 
 <h2 align="left">Technologies Used ⚙️</h2>
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="30" alt="react logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" height="30" alt="typescript logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" height="30" alt="css3 logo"  />
 </div>
